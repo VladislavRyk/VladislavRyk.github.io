@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  font-family: "Lato";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+}
+
+::selection {
+  color: #2091F9;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+@media (max-width: 1015px) {
+  header {
+    padding: 2.5rem;
+  }
+}
+@media (max-width: 840px) {
+  header {
+    justify-content: space-between;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav #menu-bar {
+  font-size: 1.7rem;
+  color: #fff;
+  display: none;
+}
+header nav #menu-bar:hover {
+  cursor: pointer;
+}
+@media (max-width: 840px) {
+  header nav #menu-bar {
+    display: initial;
+    justify-content: space-between;
+  }
+}
+header nav .navbar a {
+  color: #fff;
+  margin-right: 1.3rem;
+  font-size: 1.3rem;
+}
+@media (max-width: 840px) {
+  header nav .navbar a {
+    display: none;
+  }
+}
+@media (max-width: 1400px) {
+  header nav .navbar a {
+    font-size: 1.1rem;
+  }
+}
+header nav .navbar a:hover {
+  cursor: pointer;
+  color: #2091F9;
+}
+header nav .logo a img {
+  position: relative;
+  top: -20px;
+  margin-left: 2.5rem;
+}
+@media (max-width: 460px) {
+  header nav .logo a img {
+    justify-content: space-between;
+    margin-left: 5rem;
+  }
+}
+@media (max-width: 460px) {
+  header .social {
+    display: none;
+  }
+}
+header .social .img-container .fa-brands {
+  font-size: 1.7rem;
+  color: #fff;
+  margin-right: 1rem;
+}
+@media (max-width: 1015px) {
+  header .social .img-container .fa-brands {
+    margin-right: 0.5rem;
+  }
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+  min-height: 100vh;
+}
+.home .title {
+  text-align: center;
+}
+.home .title h3 {
+  color: #fff;
+  font-size: 4.6rem;
+  text-transform: none;
+}
+@media (max-width: 1400px) {
+  .home .title h3 {
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 620px) {
+  .home .title h3 {
+    font-size: 2.7rem;
+  }
+}
+.home .title p {
+  font-size: 1.7rem;
+  color: #dfdfdf;
+  margin-top: 1.6rem;
+  text-transform: none;
+}
+@media (max-width: 1400px) {
+  .home .title p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 620px) {
+  .home .title p {
+    font-size: 1rem;
+  }
+}
+.home .home-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.home .btn {
+  background: #2091F9;
+  padding: 1rem 4rem;
+  color: #fff;
+  border-radius: 3.3rem;
+  margin-top: 3.7rem;
+}
+.home .btn:hover {
+  background: #2090f986;
+  border: 0.2rem solid #2091F9;
+  color: #dbdbdb;
+}
+
+/*# sourceMappingURL=style.css.map */
