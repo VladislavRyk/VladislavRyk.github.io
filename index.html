@@ -13,24 +13,20 @@
 <body>
 
 <header class="header" id="header">
-    <nav>
-        <div class="navbar active">
+
+    <nav class="navbar-container">
+        <div class="navbar">
             <a href="#Home">Home</a>
             <a href="#Product">Product</a>
             <a href="#Pricing">Pricing</a>
             <a href="#About">About</a>
             <a href="#Contact">Contact</a>
         </div>
-
-        <div class="fas fa-bars" id="menu-bar"></div>
-
-        <div class="logo">
-            <a href="#home"> <img src="./img/logo.svg" alt="logotype"></a> 
-         </div>
-
     </nav>
 
-
+    <div class="logo">
+        <img src="./img/logo.svg" alt="logotype"> 
+     </div>
 
     <div class="social">
         <div class="img-container">
@@ -38,6 +34,10 @@
             <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
             <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
         </div>
+    </div>
+
+    <div class="burger-menu">
+        <i class="fas fa-bars"></i>
     </div>
 
 </header>
@@ -60,5 +60,64 @@
 </section>
 <!-- home section end -->
 
+<!-- features section start -->
+<section class="feature" id="feature">
+    <div class="feature-container">
+        <div class="title-box">
+            <h3>Features</h3>
+            <p>Most calendars are designed for teams. <br>
+                Slate is designed for freelancers</p>
+        </div>
+
+        <div class="feature-cards">
+            <div class="feature-box">
+                <div class="feature-ico">
+                    <img src="./img/feature-01.svg" alt="svg">
+                </div>
+                <div class="feature-title">
+                    <h2>OpenType features <br>
+                        Variable fonts</h2>
+                    <p>Slate helps you see how 
+                        many more days you need 
+                        to work to reach your 
+                        financial goal.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-ico">
+                    <img src="./img/feature-02.svg" alt="svg">
+                </div>
+                <div class="feature-title">
+                    <h2>Design with real data</h2>
+                    <p>Slate helps you see how 
+                        many more days you need 
+                        to work to reach your 
+                        financial goal.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-ico">
+                    <img src="./img/feature-03.svg" alt="svg">
+                </div>
+                <div class="feature-title">
+                    <h2>Fastest way to <br>
+                        take action</h2>
+                    <p>Slate helps you see how 
+                        many more days you need 
+                        to work to reach your 
+                        financial goal.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-video-container">
+
+        </div>
+    </div>
+</section>
+<!-- feature section end -->
+<script src="./script/script.js"></script>
 </body>
 </html>

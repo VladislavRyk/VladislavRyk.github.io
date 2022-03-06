@@ -19,15 +19,21 @@ section {
   padding: 2rem 9%;
 }
 
+.active {
+  background-color: #000;
+}
+
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem 9%;
+  padding: 1rem 9%;
+  background: #5333a086;
 }
 @media (max-width: 1015px) {
   header {
@@ -39,55 +45,50 @@ header {
     justify-content: space-between;
   }
 }
-header nav {
+header .burger-menu {
+  color: #fff;
+  font-size: 2rem;
+  display: none;
+}
+header .burger-menu:hover {
+  cursor: pointer;
+  color: #2091F9;
+}
+@media (max-width: 840px) {
+  header .burger-menu {
+    display: initial;
+  }
+}
+header .navbar-container {
   display: flex;
   justify-content: center;
 }
-header nav #menu-bar {
-  font-size: 1.7rem;
-  color: #fff;
-  display: none;
-}
-header nav #menu-bar:hover {
-  cursor: pointer;
-}
-@media (max-width: 840px) {
-  header nav #menu-bar {
-    display: initial;
-    justify-content: space-between;
-  }
-}
-header nav .navbar a {
+header .navbar-container .navbar a {
   color: #fff;
   margin-right: 1.3rem;
   font-size: 1.3rem;
 }
 @media (max-width: 840px) {
-  header nav .navbar a {
+  header .navbar-container .navbar a {
     display: none;
   }
 }
 @media (max-width: 1400px) {
-  header nav .navbar a {
+  header .navbar-container .navbar a {
     font-size: 1.1rem;
   }
 }
-header nav .navbar a:hover {
+header .navbar-container .navbar a:hover {
   cursor: pointer;
   color: #2091F9;
 }
-header nav .logo a img {
-  position: relative;
-  top: -20px;
-  margin-left: 2.5rem;
-}
-@media (max-width: 460px) {
-  header nav .logo a img {
-    justify-content: space-between;
-    margin-left: 5rem;
+@media (max-width: 840px) {
+  header .social {
+    flex: 1 2;
+    justify-content: center;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 670px) {
   header .social {
     display: none;
   }
@@ -102,7 +103,14 @@ header .social .img-container .fa-brands {
     margin-right: 0.5rem;
   }
 }
-
+header .logo {
+  flex: 1;
+}
+@media (min-width: 840px) {
+  header .logo {
+    margin-left: 2rem;
+  }
+}
 .home {
   display: flex;
   align-items: center;
@@ -135,6 +143,7 @@ header .social .img-container .fa-brands {
   color: #dfdfdf;
   margin-top: 1.6rem;
   text-transform: none;
+  font-weight: 300;
 }
 @media (max-width: 1400px) {
   .home .title p {
@@ -166,6 +175,46 @@ header .social .img-container .fa-brands {
   background: #2090f986;
   border: 0.2rem solid #2091F9;
   color: #dbdbdb;
+}
+
+.feature {
+  height: 300rem;
+}
+.feature .feature-container {
+  text-align: center;
+}
+.feature .feature-container .title-box {
+  margin-bottom: 5rem;
+}
+.feature .feature-container .title-box h3 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.feature .feature-container .title-box p {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.feature .feature-container .feature-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.feature .feature-container .feature-cards .feature-box {
+  max-width: 18rem;
+  padding: 1rem;
+}
+.feature .feature-container .feature-cards .feature-box .feature-ico {
+  margin-bottom: 1.2rem;
+}
+.feature .feature-container .feature-cards .feature-box .feature-title h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.feature .feature-container .feature-cards .feature-box .feature-title p {
+  font-size: 1rem;
+  color: #929292;
 }
 
 /*# sourceMappingURL=style.css.map */
